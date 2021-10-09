@@ -9,6 +9,33 @@ class NotesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("MedCore360"),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Menu'),
+            ),
+            ListTile(
+              title: const Text('Notes'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CardPage()),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
       body: Container(
         width: 500,
         child: DecoratedBox(
@@ -26,31 +53,7 @@ class NotesPage extends StatelessWidget {
             padding: const EdgeInsets.only(right: 300, top: 10),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                DropdownButton<String>(
-                  hint: const Text(
-                    "Menu",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  iconEnabledColor: Colors.white,
-                  dropdownColor: Colors.blueGrey,
-                  iconSize: 30,
-                  icon: const Icon(Icons.menu),
-                  items:
-                      <String>['Notes'].map((String value) {
-                    return DropdownMenuItem<String>(
-                      value: value,
-                      child: Text(value),
-                    );
-                  }).toList(),
-                  onChanged: (_) {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => CardPage()),
-                    );
-                  },
-                )
-              ],
+              children: [],
             ),
           ),
         ),

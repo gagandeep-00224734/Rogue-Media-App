@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rogue_media_app/AddnNote.dart';
 import 'package:rogue_media_app/EditNote.dart';
+import 'package:rogue_media_app/NotesPage.dart';
 
 class CardPage extends StatelessWidget {
   const CardPage({Key? key}) : super(key: key);
@@ -8,7 +9,17 @@ class CardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => NotesPage()),
+            );
+          },
+        ),
+      ),
       body: Container(
         height: 890,
         width: 500,
@@ -31,7 +42,7 @@ class CardPage extends StatelessWidget {
                           RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                               side:
-                                  BorderSide(color: Colors.teal, width: 1.0)))),
+                              BorderSide(color: Colors.teal, width: 1.0)))),
                   child: Icon(
                     Icons.add,
                     size: 30,
@@ -54,7 +65,7 @@ class CardPage extends StatelessWidget {
                     Text(
                       "Social Card Note",
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -96,10 +107,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -118,10 +129,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -152,7 +163,7 @@ class CardPage extends StatelessWidget {
                     Text(
                       "Social Card Note",
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -194,10 +205,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -216,10 +227,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -250,7 +261,7 @@ class CardPage extends StatelessWidget {
                     Text(
                       "Happy Birthday",
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -292,10 +303,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -314,10 +325,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -348,7 +359,7 @@ class CardPage extends StatelessWidget {
                     Text(
                       "Social Card Note",
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -390,10 +401,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
@@ -412,10 +423,10 @@ class CardPage extends StatelessWidget {
                               ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder>(
                                         RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(18.0),
+                                            BorderRadius.circular(18.0),
                                             side: BorderSide(
                                                 color: Colors.teal,
                                                 width: 2.0)))),
