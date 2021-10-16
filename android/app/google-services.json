@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775020235067",
+    "project_id": "rogue-media-app",
+    "storage_bucket": "rogue-media-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775020235067:android:9c5f5a473726a807de8f1e",
+        "android_client_info": {
+          "package_name": "com.example.rogue_media_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775020235067-f5mmi13t0jhqkbrjacvg6ec3u8janphp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEYVEdLqRyQmT8koSveGfs-AT7E8WhHLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775020235067-f5mmi13t0jhqkbrjacvg6ec3u8janphp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
